@@ -4,7 +4,6 @@ class Node(object):
         self.data = data
         self.next = next
 def reverse(head):
-    # your code goes here.
     if head is None or head.next is None:
         return head
     rest = reverse(head.next)
